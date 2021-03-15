@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color:#c7152c;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0px;
+  position: absolute;
+  background: #c7152c;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
